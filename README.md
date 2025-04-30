@@ -188,7 +188,7 @@ Based on our findings, Deep AE has the best performance compared to other techni
 By Mauricio Explaining Tasks 1 and 2  
  https://www.loom.com/share/f429dfe9bc7d4dff8295c1cfd28abf20?sid=923d464e-47ba-4432-a5fb-d6dcd721a2c2
 
-By Madelyn Explaining Task 3
+Code By Mauricio Explained by Madelyn Task 3
  https://www.loom.com/share/3f214b835ce04c888e008d59c02bd9c8?sid=c83ef0c0-9064-408d-a5c0-66cfcaf17e46
 
 ## How To Run Code
