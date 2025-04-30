@@ -102,19 +102,88 @@ Based on our findings, AE performed better both numerically and visually.
 
 ## Task 3 - Deep AE
 ### A. Modify 1 Layer AE
+In this task, we modify our Autoencoder from Task 2A to use multiple layers of our 784-dimensional 28×28 MNIST flattened images. We will draw out this architecture as shown below:
+
+```text
+Encoder:
+
+ Input: 784 (Flattened Image)
+            ↓
+        (784 → 256)
+            ↓
+          ReLU 
+            ↓
+        (256 → 64)
+            ↓
+          ReLU
+            ↓
+        (64 → 32)
+            ↓
+        32D (Code)
+            ↓
+```
+
+```text
+Decoder:
+
+        (32 → 64)
+            ↓
+         Sigmoid
+            ↓
+        (64 → 256)
+            ↓
+         Sigmoid
+            ↓
+        (256 → 784)
+            ↓
+ Output: 784D (Reconstructed Image)                          
+```
 
 ### B. Implement Activation Functions
+In this task, we train our new Autoencoder using activation functions such as ReLu, Tanh, and LeakyReLu.
+
+Similar to Task 2B, we will train 10 epochs and output the MSE Loss after training.
+
+```text
+Training Deep AE with ReLU…
+  Epoch  1 Loss: 0.051253
+  Epoch  5 Loss: 0.015794
+  Epoch 10 Loss: 0.011141
+ReLU -> Final MSE: 0.010655                    
+```
+
+```text
+Training Deep AE with Tanh…
+  Epoch  1 Loss: 0.066680
+  Epoch  5 Loss: 0.021232
+  Epoch 10 Loss: 0.011397
+Tanh -> Final MSE: 0.010890                 
+```
+
+```text
+Training Deep AE with LeakyReLU…
+  Epoch  1 Loss: 0.051000
+  Epoch  5 Loss: 0.013147
+  Epoch 10 Loss: 0.009043
+LeakyReLU -> Final MSE: 0.008839           
+```
 
 ### C. Compare Results
+![AE Deep AE Images](plots/ae-deep-compare.png)
+
+In this task, we analyze the difference in AE and DeepAE techniques. We compute the reconstruction of the Task 2C (1 Layer AE) dataset and compare it with the Deep AE (LeakyReLu) dataset. We also visually evaluate the images.
+
+Our observations:
+
+- Deep AE was able to recreate strokes and backgrounds more accurately than the 1-layer
+AE. Specifically the 4 looks more like a 4 than a 9 in the deep AE.
+
+Based on our findings, Deep AE has the best performance compared to other techniques. 1 Layer AE is second best, PCA is worst.
 
 
 
 ## Code Explanation Video
-### Part 1
-By Mauricio Explaining Tasks 1 and 2  
-https://www.loom.com/share/f429dfe9bc7d4dff8295c1cfd28abf20?sid=923d464e-47ba-4432-a5fb-d6dcd721a2c2
-
 
 ## How To Run Code
-Run the code in Jupyter notebook.
+
 
