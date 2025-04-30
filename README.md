@@ -110,7 +110,11 @@ Based on our findings, AE performed better both numerically and visually.
 
 
 ## Code Explanation Video
+### Part 1
+By Mauricio Explaining Tasks 1 and 2
+https://www.loom.com/share/f429dfe9bc7d4dff8295c1cfd28abf20?sid=923d464e-47ba-4432-a5fb-d6dcd721a2c2
+
 
 ## How To Run Code
-
+Run the code in Jupyter notebook.
 
