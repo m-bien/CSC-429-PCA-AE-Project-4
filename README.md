@@ -31,7 +31,9 @@ In this task, we apply PCA to simplify the high dimensional MNIST Dataset into j
 ![PCA 2D Plot](plots/pca-plot.png)
 
 ### B. Reduce to 32D (for reconstruction)
-Plot
+In this task, we apply PCA to simplify the high dimensional MNIST Dataset into 32 features. 
+
+![PCA 32D Plot](plots/pca-plot-2.png)
 
 ### C. Reconstruct and Compute MSE Loss
 After reducing the data we then reconstruct it back to its original size. 
